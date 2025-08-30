@@ -1,145 +1,128 @@
-Vibbly – Real-time Chat & Video Calling Platform 📱💬🎥
+# Vibbly – Real-time Chat & Video Calling Platform 💬
 
-🌍 Overview
+## 🌍 Overview
 
-Vibbly is a platform where people can practice conversations, make friends, and improve their language skills together.
-It combines real-time chat, high-quality video calls, and community features in one place.
+**Vibbly** is a modern communication platform where people can **practice conversations, make friends, and improve their language skills together.**
+It brings together **instant messaging, high-quality video calls, and community features** in one place with a **clean, responsive design.**
 
-Built for hackathons, teams, and personal use, Vibbly makes online communication seamless, secure, and engaging with a modern responsive design.
+Built for **hackathons, teams, learners, and personal use,** Vibbly ensures **seamless communication, security, and scalability.**
 
-🎯 Objectives
+<br/>
 
-Seamless Communication: Real-time messaging & video calling in a single platform.
+## 🎯 Objectives
 
-User-Centric Design: Clean, responsive, and intuitive UI.
+- **Improve Language Skills:** Help users practice conversations and enhance communication skills.
 
-Cross-Platform Accessibility: Works smoothly on web and mobile.
+- **Seamless Communication:** Real-time messaging & video calling in a single platform.
 
-Privacy & Security: Secure authentication & data handling.
+- **User-Centric Design:** Clean, modern, and easy-to-use web interface.
 
-Scalability: Extensible architecture for future features like media sharing & group calls.
+- **Privacy & Security:** JWT-based authentication & secure data handling.
 
-✨ Key Features
-💬 Real-Time Chat
+- **Future Ready:** Built with extensibility in mind for features like group calls, AI chat partners, and gamification.
 
-Instant 1-to-1 and group messaging
+<br/>
 
-Online/offline status indicators
+## ✨ Features
 
-Typing indicators & message timestamps
+- **💬 Real-Time Messaging (Powered by Stream API)**
 
-Emoji & media sharing support
+- 1-to-1 and group chat
+- Typing indicators & read receipts
+- Online/offline presence
+- Emoji & media sharing support
 
-🎥 Video Calling
+- **🎥 Video Calling (Powered by Stream API)**
 
-High-quality 1-to-1 video calls (powered by Stream API / WebRTC)
+- High-quality 1-to-1 video calls
+- Call controls: mute/unmute,react,record end call
+- Screen sharing during video calls
+- Low-latency, real-time performance
 
-Call controls: mute/unmute, end call
+- **🎨 User Experience**
 
-Low-latency, real-time performance
+- Modern responsive UI (React + Bootstrap)
+- Sidebar for quick navigation
+- Notifications for new messages & missed calls
+- Light & Dark theme support
 
-🎨 User Experience
+- **🔐 Security & Reliability**
 
-Modern responsive UI (React + Bootstrap)
+- JWT Authentication for secure login/signup
+- MongoDB Atlas for cloud-based storage
+- Stream API ensures reliable real-time communication
 
-Sidebar for quick navigation
+<br/>
 
-Notifications for new messages & missed calls
 
-Light & Dark theme support
+## 🛠️ Tech Stack
 
-🔐 Additional Features
+- **Frontend:** 
+- React.js 
+- Bootstrap
 
-Secure login/signup system (JWT Authentication)
+- **Backend:** 
+- Node.js 
+- Express.js
 
-Scalable backend with Socket.IO for real-time updates
+- **Real-Time Messaging & Calls:**
+- Stream API
 
-MongoDB Atlas for reliable cloud-based data storage
+- **Database:**
+- MongoDB Atlas
 
-Placeholder avatars & customizable profile pictures
+- **Authentication:**
+- JWT (JSON Web Tokens)
 
-🛠️ Tech Stack
-Frontend
+- **Deployment:** 
+-Render
 
-React.js (Hooks & Context API)
+- **Version Control:**
+- Git & GitHub
 
-Bootstrap (responsive design)
+<br/>
 
-Backend
+## 🏗️ Architecture
 
-Node.js
+- **Workflow**
 
-Express.js
+![Vibbly Workflow Architecture] (https://raw.githubusercontent.com/ShalleySharma/vibbly-realtime-communication/refs/heads/main/frontend/public/media/workflow.png)
+ 
+<br/>
 
-Socket.IO (real-time chat & calls)
+## 🔮 Future Enhancements
 
-Video & Messaging
+- Group video calls 
+- Voice messages & reactions
+- Gamification features (badges, streaks, points)
+- AI-powered language practice partner
 
-Stream API / WebRTC
+<br/>
 
-Database
+## ⚡ Installation & Setup
 
-MongoDB Atlas
+- **Clone the repository**
+git clone https://github.com/ShalleySharma/vibbly-realtime-communication.git
 
-Others
+- **Navigate to project folder**
+cd vibbly  
 
-JWT Authentication
+- **Install dependencies (frontend + backend)**
+npm install  
 
-Git & GitHub for version control
+- **Setup environment variables (create a .env file in backend)**
+MONGO_URI=your-mongodb-atlas-uri  
+JWT_SECRET=your-secret-key  
+STREAM_API_KEY=your-stream-api-key  
+STREAM_API_SECRET=your-stream-api-secret  
 
-Deployment: Vercel (frontend) / Render / Heroku (backend)
+- **Setup environment variables (create a .env file in frontend)**
+REACT_APP_STREAM_API_KEY=your-stream-api-secret
 
-🏗️ Architecture
-🔹 Web Application Workflow
+- **Run backend server**
+npm run build  
 
-User signs up / logs in
+- **Run frontend**
+npm start  
 
-Real-time socket connection is established
-
-Messages are exchanged instantly via Socket.IO
-
-Video call requests handled via Stream API / WebRTC
-
-Data securely stored in MongoDB Atlas
-
-🔹 Technical Flow
-
-Frontend (React + Bootstrap) → Chat & video call UI
-Backend (Node + Express) → REST APIs + WebSocket server
-Database (MongoDB Atlas) → User, chat & call records
-Stream API / WebRTC → Handles real-time video & media transfer
-
-🔮 Future Enhancements
-
-Group video calls with screen sharing
-
-End-to-end encryption for chats & calls
-
-Voice messages & message reactions
-
-Gamification: badges, streaks, and points
-
-AI-powered conversation partner for language practice
-
-⚡ Installation & Setup
-# Clone repository
-git clone https://github.com/your-username/vibbly.git
-
-# Navigate to project folder
-cd vibbly
-
-# Install dependencies (frontend + backend)
-npm install
-
-# Setup environment variables
-# (Create a .env file in backend)
-MONGO_URI=your-mongodb-atlas-uri
-JWT_SECRET=your-secret-key
-STREAM_API_KEY=your-stream-api-key
-STREAM_API_SECRET=your-stream-api-secret
-
-# Run backend server
-npm run build
-
-# Run frontend
-npm start
+<br/>
