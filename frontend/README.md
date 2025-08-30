@@ -95,35 +95,28 @@ Try Vibbly now 👉 (https://vibbly-realtime-communication.onrender.com)
 
 ## ⚡ Installation & Setup
 
-- **Clone the repository**
-  
-git clone https://github.com/ShalleySharma/vibbly-realtime-communication.git
+**Clone the repository**
+- git clone https://github.com/ShalleySharma/vibbly-realtime-communication.git
 
-- **Navigate to project folder**
-  
-cd vibbly  
+**Navigate to project folder**
+- cd vibbly  
 
-- **Install dependencies (frontend + backend)**
-  
-npm install  
+**Install dependencies (frontend + backend)**
+- npm install
+    
+**Setup environment variables (create a .env file in backend)**
+- MONGO_URI=your-mongodb-atlas-uri  
+- JWT_SECRET=your-secret-key  
+- STREAM_API_KEY=your-stream-api-key  
+- STREAM_API_SECRET=your-stream-api-secret  
 
-- **Setup environment variables (create a .env file in backend)**
-  
-MONGO_URI=your-mongodb-atlas-uri  
-JWT_SECRET=your-secret-key  
-STREAM_API_KEY=your-stream-api-key  
-STREAM_API_SECRET=your-stream-api-secret  
+**Setup environment variables (create a .env file in frontend)**
+- REACT_APP_STREAM_API_KEY=your-stream-api-secret
 
-- **Setup environment variables (create a .env file in frontend)**
+**Run backend server**
+- npm run build
   
-REACT_APP_STREAM_API_KEY=your-stream-api-secret
-
-- **Run backend server**
-  
-npm run build  
-
-- **Run frontend**
-  
-npm start  
+**Run frontend**
+- npm start  
 
 <br/>
