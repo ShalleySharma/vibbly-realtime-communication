@@ -25,28 +25,28 @@ Built for **hackathons, teams, learners, and personal use,** Vibbly ensures **se
 
 ## ✨ Features
 
-- **💬 Real-Time Messaging (Powered by Stream API)**
+**💬 Real-Time Messaging (Powered by Stream API)**
 
 - 1-to-1 and group chat
 - Typing indicators & read receipts
 - Online/offline presence
 - Emoji & media sharing support
 
-- **🎥 Video Calling (Powered by Stream API)**
+**🎥 Video Calling (Powered by Stream API)**
 
 - High-quality 1-to-1 video calls
 - Call controls: mute/unmute,react,record end call
 - Screen sharing during video calls
 - Low-latency, real-time performance
 
-- **🎨 User Experience**
+**🎨 User Experience**
 
 - Modern responsive UI (React + Bootstrap)
 - Sidebar for quick navigation
 - Notifications for new messages & missed calls
 - Light & Dark theme support
 
-- **🔐 Security & Reliability**
+**🔐 Security & Reliability**
 
 - JWT Authentication for secure login/signup
 - MongoDB Atlas for cloud-based storage
@@ -57,28 +57,19 @@ Built for **hackathons, teams, learners, and personal use,** Vibbly ensures **se
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** 
-- React.js 
-- Bootstrap
+- **Frontend:** React.js, Bootstrap
 
-- **Backend:** 
-- Node.js 
-- Express.js
+- **Backend:** Node.js, Express.js
 
-- **Real-Time Messaging & Calls:**
-- Stream API
+- **Real-Time Messaging & Calls:** Stream API
 
-- **Database:**
-- MongoDB Atlas
+- **Database:** MongoDB Atlas
 
-- **Authentication:**
-- JWT (JSON Web Tokens)
+- **Authentication:** JWT (JSON Web Tokens)
 
-- **Deployment:** 
--Render
+- **Deployment:** Render
 
-- **Version Control:**
-- Git & GitHub
+- **Version Control:** Git & GitHub
 
 <br/>
 
