@@ -3,7 +3,7 @@ import useAuthUser from "../hooks/useAuthUser";
 import useLogout from "../hooks/useLogout";
 import { useTheme } from "../hooks/useTheme";
 import { Link, useLocation } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query"; //fetching & caching friend requests
 import { getFriendRequests } from "../lib/api";
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
     const location = useLocation();
     const isChatPage = location.pathname?.startsWith("/chat");
     const { currentTheme, themes, isDropdownOpen, toggleTheme, toggleDropdown, closeDropdown } = useTheme();
-    const dropdownRef = useRef(null);
+    const dropdownRef = useRef(null);//detect clicks outside the dropdown
 
     const { logoutMutation } = useLogout();
     const { data: friendRequests, isLoading: isLoadingRequests } = useQuery({
@@ -65,17 +65,17 @@ const Navbar = () => {
                     </Link>
 
                     <div className="position-relative" ref={dropdownRef}>
-                        <button 
+                        <button
                             className="btn btn-outline-secondary"
                             onClick={toggleDropdown}
                             aria-expanded={isDropdownOpen}
                         >
                             <i className="fas fa-adjust"></i>
                         </button>
-                        
+
                         {isDropdownOpen && (
                             <div className="theme-dropdown position-absolute end-0 mt-2 bg-white border rounded shadow-lg z-50"
-                                 style={{ width: '200px', maxHeight: '300px', overflowY: 'auto' }}>
+                                style={{ width: '200px', maxHeight: '300px', overflowY: 'auto' }}>
                                 <div className="p-2 border-bottom">
                                     <small className="text-muted">Select Theme</small>
                                 </div>
@@ -84,13 +84,13 @@ const Navbar = () => {
                                         key={theme.name}
                                         className={`dropdown-item d-flex align-items-center ${currentTheme === theme.name ? 'active' : ''}`}
                                         onClick={() => toggleTheme(theme.name)}
-                                        style={{ 
+                                        style={{
                                             padding: '8px 12px',
                                             borderLeft: currentTheme === theme.name ? `3px solid ${theme.colors[1]}` : '3px solid transparent'
                                         }}
                                     >
-                                        <div 
-                                            className="me-2" 
+                                        <div
+                                            className="me-2"
                                             style={{
                                                 width: '16px',
                                                 height: '16px',
@@ -122,7 +122,7 @@ const Navbar = () => {
                                 alt="User Avatar"
                                 className="img-fluid"
                             />
-                        </div>
+                        </div>    
                     </div>
 
                     <button className="btn btn-light rounded-circle" onClick={logoutMutation}>

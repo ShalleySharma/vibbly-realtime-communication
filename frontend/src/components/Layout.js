@@ -12,8 +12,7 @@ const Layout = ({ children, showSidebar = false }) => {
           <Sidebar />
         </div>
       )}
-
-
+      
       <div style={{ marginLeft: showSidebar ? "260px" : "0", width: "100%" }}>
         <div
           style={{

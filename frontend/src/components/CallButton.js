@@ -8,7 +8,7 @@ function CallButton({ handleVideoCall }) {
     >
       <button
         onClick={handleVideoCall}
-        className="btn btn-success btn-sm text-white"
+        className="btn btn-primary btn-sm text-white"
       >
         <i className="fa-solid fa-video"></i>
       </button>

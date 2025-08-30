@@ -1,70 +1,145 @@
-# Getting Started with Create React App
+Vibbly – Real-time Chat & Video Calling Platform 📱💬🎥
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🌍 Overview
 
-## Available Scripts
+Vibbly is a platform where people can practice conversations, make friends, and improve their language skills together.
+It combines real-time chat, high-quality video calls, and community features in one place.
 
-In the project directory, you can run:
+Built for hackathons, teams, and personal use, Vibbly makes online communication seamless, secure, and engaging with a modern responsive design.
 
-### `npm start`
+🎯 Objectives
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Seamless Communication: Real-time messaging & video calling in a single platform.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+User-Centric Design: Clean, responsive, and intuitive UI.
 
-### `npm test`
+Cross-Platform Accessibility: Works smoothly on web and mobile.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Privacy & Security: Secure authentication & data handling.
 
-### `npm run build`
+Scalability: Extensible architecture for future features like media sharing & group calls.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+✨ Key Features
+💬 Real-Time Chat
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Instant 1-to-1 and group messaging
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Online/offline status indicators
 
-### `npm run eject`
+Typing indicators & message timestamps
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Emoji & media sharing support
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🎥 Video Calling
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+High-quality 1-to-1 video calls (powered by Stream API / WebRTC)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Call controls: mute/unmute, end call
 
-## Learn More
+Low-latency, real-time performance
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🎨 User Experience
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Modern responsive UI (React + Bootstrap)
 
-### Code Splitting
+Sidebar for quick navigation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Notifications for new messages & missed calls
 
-### Analyzing the Bundle Size
+Light & Dark theme support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🔐 Additional Features
 
-### Making a Progressive Web App
+Secure login/signup system (JWT Authentication)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Scalable backend with Socket.IO for real-time updates
 
-### Advanced Configuration
+MongoDB Atlas for reliable cloud-based data storage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Placeholder avatars & customizable profile pictures
 
-### Deployment
+🛠️ Tech Stack
+Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+React.js (Hooks & Context API)
 
-### `npm run build` fails to minify
+Bootstrap (responsive design)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Backend
+
+Node.js
+
+Express.js
+
+Socket.IO (real-time chat & calls)
+
+Video & Messaging
+
+Stream API / WebRTC
+
+Database
+
+MongoDB Atlas
+
+Others
+
+JWT Authentication
+
+Git & GitHub for version control
+
+Deployment: Vercel (frontend) / Render / Heroku (backend)
+
+🏗️ Architecture
+🔹 Web Application Workflow
+
+User signs up / logs in
+
+Real-time socket connection is established
+
+Messages are exchanged instantly via Socket.IO
+
+Video call requests handled via Stream API / WebRTC
+
+Data securely stored in MongoDB Atlas
+
+🔹 Technical Flow
+
+Frontend (React + Bootstrap) → Chat & video call UI
+Backend (Node + Express) → REST APIs + WebSocket server
+Database (MongoDB Atlas) → User, chat & call records
+Stream API / WebRTC → Handles real-time video & media transfer
+
+🔮 Future Enhancements
+
+Group video calls with screen sharing
+
+End-to-end encryption for chats & calls
+
+Voice messages & message reactions
+
+Gamification: badges, streaks, and points
+
+AI-powered conversation partner for language practice
+
+⚡ Installation & Setup
+# Clone repository
+git clone https://github.com/your-username/vibbly.git
+
+# Navigate to project folder
+cd vibbly
+
+# Install dependencies (frontend + backend)
+npm install
+
+# Setup environment variables
+# (Create a .env file in backend)
+MONGO_URI=your-mongodb-atlas-uri
+JWT_SECRET=your-secret-key
+STREAM_API_KEY=your-stream-api-key
+STREAM_API_SECRET=your-stream-api-secret
+
+# Run backend server
+npm run build
+
+# Run frontend
+npm start
