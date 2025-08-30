@@ -77,7 +77,10 @@ Built for **hackathons, teams, learners, and personal use,** Vibbly ensures **se
 
 - **Workflow**
 
-![Vibbly Workflow Architecture] (https://raw.githubusercontent.com/ShalleySharma/vibbly-realtime-communication/refs/heads/main/frontend/public/media/workflow.png)
+![Vibbly Workflow Architecture](https://raw.githubusercontent.com/ShalleySharma/vibbly-realtime-communication/refs/heads/main/frontend/public/media/workflow.png)
+
+- **🚀 Live Demo**
+Try Vibbly now 👉 (https://vibbly-realtime-communication.onrender.com)
  
 <br/>
 
